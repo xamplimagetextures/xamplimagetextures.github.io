@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XamplTextures</title>
+    <style>
+        @font-face {
+        font-family: "RetroGaming";
+        src: url(src/RetroGaming.ttf);
+        }
+        * {
+            font-family: "RetroGaming";
+            margin: 0px;
+            padding: 0px;
+        }
+        h1, h2 {
+            color: white;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+        .mainbar {
+            position: fixed;
+            width: 100%;
+        }
+        .navbar {
+            display: flex;
+            columns: 5;
+            justify-content: center;
+            margin: 20px;
+        }
+        .textures {
+            position: absolute;
+            bottom: 0%;
+            height: 70%;
+            width: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-columns: max-content;
+            background-color: white;
+        }
+        .textures img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbar">
+        <center>
+            <h1>Free Image Textures</h1>
+            <h2>by Xampl_</h2>
+        </center>
+        <div class="navbar">
+            <a href="buildings/">Buildings</a>
+        </div> 
+    </div>
+
+</body>
+</html>
